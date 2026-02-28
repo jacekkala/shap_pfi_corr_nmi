@@ -38,12 +38,10 @@ The study explores these methods in the context of Logistic Regression and XGBoo
 
 ### Models
 
-* 
-**Logistic Regression**: Implemented as a linear baseline model.
+* **Logistic Regression**: Implemented as a linear baseline model.
 
 
-* 
-**XGBoost (Extreme Gradient Boosting)**: Implemented as a complex, non-linear _"black-box"_ tree ensemble.
+* **XGBoost (Extreme Gradient Boosting)**: Implemented as a complex, non-linear _"black-box"_ tree ensemble.
 
 ---
 
