@@ -98,9 +98,17 @@ Experimental results reveal significant inconsistencies between global rankings 
 
 Iterative selection experiments (Forward and Backward Selection) demonstrated that SHAP does not necessarily prioritize features with the highest standalone predictive power in redundant datasets. When features were added sequentially based on rankings, PFI and Correlation sometimes recovered model performance faster than SHAP in the initial stages.
 
-![breast_best](images/breast_best.png)
+<div align="center">
+  <img src="images/breast_best.png" alt="breast_best" width="100%">
+  <p><em>Iterative Feature Addition Curves (Forward Ranking) for Breast Cancer Wisconsin Dataset (Logistic Regression).</em></p>
+</div>
 
-![adult_best](images/adult_best.png)
+
+
+<div align="center">
+  <img src="images/adult_best.png" alt="adult_best" width="100%">
+  <p><em>Iterative Feature Addition Curves (Forward Ranking) for Adult Census Income Dataset (XGBoost).</em></p>
+</div>
 
 ### 4. Mitigating Multicollinearity via Hierarchical Clustering
 
@@ -114,10 +122,8 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 
 * **Convergence of Interpretability**: The removal of redundancy unmasked the true predictive power of features, causing PFI scores to surge and bringing SHAP and PFI rankings into alignment.
 
-
-![dendogram](images/dendogram.png)
-
-| Metric | Full Model (30 Features) | Reduced Model (11 Features, t=0.5) | 
+_Performance Comparison: Full Feature Set vs. Reduced Feature Set at t=0.5 (class: Malignant)_
+| Metric | Full Model (30 Features) | Reduced Model (11 Features, _t=0.5_) | 
 | :--- | :--- | :--- |
 | Precision | 0.98 | 0.98 | 
 | Recall | 0.95 | 0.95 | 
@@ -125,10 +131,24 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 | Accuracy | 0.97 | 0.97 | 
 | ROC AUC | 0.9974 | 0.9967 |
 
+<div align="center">
+  <img src="images/dendogram.png" alt="dendogram" width="100%">
+  <p><em>Hierarchical Clustering Dendrogram (Ward Linkage). The y-axis represents the Ward linkage distance (increase in within-cluster variance). The black dashed line at threshold $t=0.5$ cuts the tree into 11 distinct clusters by grouping highly redundant features.</em></p>
+</div>
 
-![pfi_after](images/pfi_after.png)
 
-![shap_after](images/shap_after.png)
+
+<div align="center">
+  <img src="images/pfi_after.png" alt="pfi_after" width="100%">
+  <p><em>Permutation Feature Importance (PFI) for the Reduced Model. We can observe more pronounced importance scores compared to the original model. All retained predictors now have positive PFI scores.</em></p>
+</div>
+
+
+
+<div align="center">
+  <img src="images/shap_after.png" alt="shap_after" width="100%">
+  <p><em>SHAP Summary Plot for the Reduced Model (11 features). Compared to the full model, the SHAP values here exhibit substantially higher magnitude (maximum $\approx 2.23$ vs $0.96$) and a wider spread, facilitating improved interpretability.</em></p>
+</div>
 
 
 
