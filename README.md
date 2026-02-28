@@ -52,7 +52,7 @@ In the Breast Cancer Wisconsin dataset, strong near-perfect linear relationships
 
 <div align="center">
   <img src="images/corr_plots.png" alt="Correlation Plots" width="100%">
-  <p><em>Figure 3.1: Pairwise relationships between selected features from the Breast Cancer Wisconsin dataset. Below-diagonal panels show scatter plots colored by diagnosis (red=malignant, blue=benign). We can observe almost perfect collinearity between mean radius and mean perimeter, and exponential-like relationships among mean area vs. mean radius and mean area vs. mean perimeter. Diagonal panels display kernel density estimates divided by class. For each feature pair, Pearson Correlation Coefficients (Corr) and Normalized Mutual Information (NMI) are reported.</em></p>
+  <p><em>Pairwise relationships between selected features from the Breast Cancer Wisconsin dataset. Below-diagonal panels show scatter plots colored by diagnosis (red=malignant, blue=benign). We can observe almost perfect collinearity between mean radius and mean perimeter, and exponential-like relationships among mean area vs. mean radius and mean area vs. mean perimeter. Diagonal panels display kernel density estimates divided by class. For each feature pair, Pearson Correlation Coefficients (Corr) and Normalized Mutual Information (NMI) are reported.</em></p>
 </div>
 
 ### 2. Discrepancies Between SHAP and PFI
