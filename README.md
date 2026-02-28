@@ -121,16 +121,47 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 
 
 * **Convergence of Interpretability**: The removal of redundancy unmasked the true predictive power of features, causing PFI scores to surge and bringing SHAP and PFI rankings into alignment.
+  
 
-_Performance Comparison: Full Feature Set vs. Reduced Feature Set at t=0.5 (class: Malignant)_
-
-| Metric | Full Model (30 Features) | Reduced Model (11 Features, _t=0.5_) | 
-| :--- | :--- | :--- |
-| Precision | 0.98 | 0.98 | 
-| Recall | 0.95 | 0.95 | 
-| F1-Score | 0.96 | 0.96 | 
-| Accuracy | 0.97 | 0.97 | 
-| ROC AUC | 0.9974 | 0.9967 |
+<div align="center" style="margin-bottom: 50px;">
+  <table>
+    <thead>
+      <tr>
+        <th align="left">Metric</th>
+        <th align="left">Full Model (30 Features)</th>
+        <th align="left">Reduced Model (11 Features, $t=0.5$)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left"><strong>Precision</strong></td>
+        <td align="left">0.98</td>
+        <td align="left">0.98</td>
+      </tr>
+      <tr>
+        <td align="left"><strong>Recall</strong></td>
+        <td align="left">0.95</td>
+        <td align="left">0.95</td>
+      </tr>
+      <tr>
+        <td align="left"><strong>F1-Score</strong></td>
+        <td align="left">0.96</td>
+        <td align="left">0.96</td>
+      </tr>
+      <tr>
+        <td align="left"><strong>Accuracy</strong></td>
+        <td align="left">0.97</td>
+        <td align="left">0.97</td>
+      </tr>
+      <tr>
+        <td align="left"><strong>ROC AUC</strong></td>
+        <td align="left">0.9974</td>
+        <td align="left">0.9967</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><em><strong> Performance Comparison: Full Feature Set vs. Reduced Feature Set at $t=0.5$ (class: Malignant)</em></p>
+</div>
 
 <div align="center" style="margin-bottom: 150px;">
   <img src="images/dendogram.png" alt="dendogram" width="100%">
