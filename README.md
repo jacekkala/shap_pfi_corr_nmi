@@ -43,13 +43,13 @@ The study explores these methods in the context of Logistic Regression and XGBoo
 
 * **XGBoost (Extreme Gradient Boosting)**: Implemented as a complex, non-linear _"black-box"_ tree ensemble.
 
-
+$$\mathbb{P}(Y = 1 \mid \textbf{x}^{(i)}) = \frac{1}{1 + \exp\!\left( -(\beta_0 + \beta_1 x_1^{(i)} + \beta_2 x_2^{(i)} + \cdots + \beta_p x_p^{(i)}) \right)}$$
 
 ## 📊 Key Findings and Experiments
 
 ### 1. The Impact of Multicollinearity
 
-In the Breast Cancer Wisconsin dataset, strong near-perfect linear relationships were observed, such as between mean radius and mean perimeter (\[r=0.9979]\).
+In the Breast Cancer Wisconsin dataset, strong near-perfect linear relationships were observed, such as between mean radius and mean perimeter ($r=0.9979$).
 
 _Pairwise relationships between selected features from the Breast Cancer Wisconsin dataset. Below-diagonal panels show scatter plots colored by diagnosis (red=malignant, blue=benign). We can observe almost perfect collinearity between mean radius and mean perimeter, and exponential-like relationships among mean area vs. mean radius and mean area vs. mean perimeter. Diagonal panels display kernel density estimates divided by class. For each feature pair, Pearson Correlation Coefficients (Corr) and Normalized Mutual Information (NMI) are reported._
 ![corr_plots](images/corr_plots.png)
