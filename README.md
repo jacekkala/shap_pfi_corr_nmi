@@ -95,13 +95,13 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 
 ![dendogram](images/dendogram.png)
 
-| Metric | Full Model (30 Features) | Reduced Model (11 Features, _t=0.5_) | 
-| : | : | : |
-| **Precision** | 0.98 | 0.98 | 
-| **Recall** | 0.95 | 0.95 | 
-| **F1-Score** | 0.96 | 0.96 | 
-| **Accuracy** | 0.97 | 0.97 | 
-| **ROC AUC** | 0.9974 | 0.9967 | 
+| Metric | Full Model (30 Features) | Reduced Model (11 Features, t=0.5) | 
+| :--- | :--- | :--- |
+| Precision | 0.98 | 0.98 | 
+| Recall | 0.95 | 0.95 | 
+| F1-Score | 0.96 | 0.96 | 
+| Accuracy | 0.97 | 0.97 | 
+| ROC AUC | 0.9974 | 0.9967 |
 
 
 ![pfi_after](images/pfi_after.png)
