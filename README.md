@@ -50,7 +50,7 @@ The study explores these methods in the context of Logistic Regression and XGBoo
 
 In the Breast Cancer Wisconsin dataset, strong near-perfect linear relationships were observed, such as between mean radius and mean perimeter ($r=0.9979$).
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/corr_plots.png" alt="Correlation Plots" width="100%">
   <p><em>Pairwise relationships between selected features from the Breast Cancer Wisconsin dataset. Below-diagonal panels show scatter plots colored by diagnosis (red=malignant, blue=benign). We can observe almost perfect collinearity between mean radius and mean perimeter, and exponential-like relationships among mean area vs. mean radius and mean area vs. mean perimeter. Diagonal panels display kernel density estimates divided by class. For each feature pair, Pearson Correlation Coefficients (Corr) and Normalized Mutual Information (NMI) are reported.</em></p>
 </div>
@@ -65,14 +65,14 @@ Experimental results reveal significant inconsistencies between global rankings 
 * **Model Architecture Matters**: Logistic Regression distributed its feature importance across a broader set of correlated features (showing a funnel-shaped SHAP decay), while XGBoost performed internal feature selection, assigning near-zero importance to non-informative features.
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/image_517da1.png" alt="image_517da1" width="100%">
   <p><em>Permutation Feature Importance (PFI) for Breast Cancer Dataset. The x-axis represents the drop in ROC AUC score when feature values are permuted.</em></p>
 </div>
 
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/adult_pfi.png" alt="adult_pfi" width="100%">
   <p><em>Permutation Feature Importance (PFI) for Adult Census Income Dataset. The x-axis represents the drop in ROC AUC score when feature values are permuted.</em></p>
 </div>
@@ -80,7 +80,7 @@ Experimental results reveal significant inconsistencies between global rankings 
 
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/image_516b1e.png" alt="image_516b1e" width="100%">
   <p><em>SHAP summary plots for Breast Cancer Dataset. Points represent individual instances; color indicates feature value (red=high, blue=low); x-axis displays the SHAP values. High values of worst texture (red) result in negative SHAP values, increasing the predicted risk of malignancy.</em></p>
 </div>
@@ -88,7 +88,7 @@ Experimental results reveal significant inconsistencies between global rankings 
 
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/image_51677d1.png" alt="image_51677d1" width="100%">
   <p><em>SHAP summary plots for Adult Census Income Dataset. Each point represents a single observation.</em></p>
 </div>
@@ -98,14 +98,14 @@ Experimental results reveal significant inconsistencies between global rankings 
 
 Iterative selection experiments (Forward and Backward Selection) demonstrated that SHAP does not necessarily prioritize features with the highest standalone predictive power in redundant datasets. When features were added sequentially based on rankings, PFI and Correlation sometimes recovered model performance faster than SHAP in the initial stages.
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/breast_best.png" alt="breast_best" width="100%">
   <p><em>Iterative Feature Addition Curves (Forward Ranking) for Breast Cancer Wisconsin Dataset (Logistic Regression).</em></p>
 </div>
 
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/adult_best.png" alt="adult_best" width="100%">
   <p><em>Iterative Feature Addition Curves (Forward Ranking) for Adult Census Income Dataset (XGBoost).</em></p>
 </div>
@@ -131,21 +131,21 @@ _Performance Comparison: Full Feature Set vs. Reduced Feature Set at t=0.5 (clas
 | Accuracy | 0.97 | 0.97 | 
 | ROC AUC | 0.9974 | 0.9967 |
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/dendogram.png" alt="dendogram" width="100%">
   <p><em>Hierarchical Clustering Dendrogram (Ward Linkage). The y-axis represents the Ward linkage distance (increase in within-cluster variance). The black dashed line at threshold $t=0.5$ cuts the tree into 11 distinct clusters by grouping highly redundant features.</em></p>
 </div>
 
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/pfi_after.png" alt="pfi_after" width="100%">
   <p><em>Permutation Feature Importance (PFI) for the Reduced Model. We can observe more pronounced importance scores compared to the original model. All retained predictors now have positive PFI scores.</em></p>
 </div>
 
 
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px;">
   <img src="images/shap_after.png" alt="shap_after" width="100%">
   <p><em>SHAP Summary Plot for the Reduced Model (11 features). Compared to the full model, the SHAP values here exhibit substantially higher magnitude (maximum $\approx 2.23$ vs $0.96$) and a wider spread, facilitating improved interpretability.</em></p>
 </div>
