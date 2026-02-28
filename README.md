@@ -101,7 +101,8 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 | **Recall** | 0.95 | 0.95 | 
 | **F1-Score** | 0.96 | 0.96 | 
 | **Accuracy** | 0.97 | 0.97 | 
-| **ROC AUC** | 0.9974 | 0.9967 | (Table 3.4: Performance Comparison: Full Feature Set vs. Reduced Feature Set )
+| **ROC AUC** | 0.9974 | 0.9967 | 
+
 
 ![pfi_after](images/pfi_after.png)
 
