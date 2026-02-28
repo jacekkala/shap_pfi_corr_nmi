@@ -119,10 +119,4 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 
 
 * 
-**Clustering Enhances Reliability**: Grouping highly correlated features prior to model training significantly enhances the stability and clinical reliability of feature importance assessments.
-
-
-
----
-
-Would you like me to draft a brief setup and installation guide (e.g., `requirements.txt` or `pip install` commands) to include in this README so others can easily run your code?
+**Clustering Enhances Reliability**: Grouping highly correlated features prior to model training significantly enhances the stability and clinical reliability of feature importance assessments
