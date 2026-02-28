@@ -65,13 +65,27 @@ Experimental results reveal significant inconsistencies between global rankings 
 * **Model Architecture Matters**: Logistic Regression distributed its feature importance across a broader set of correlated features (showing a funnel-shaped SHAP decay), while XGBoost performed internal feature selection, assigning near-zero importance to non-informative features.
 
 
-![image_517da1](images/image_517da1.png)
+<div align="center">
+  <img src="images/image_517da1.png" alt="image_517da1" width="100%">
+  <p><em>Permutation Feature Importance (PFI) for Breast Cancer Dataset. The x-axis represents the drop in ROC AUC score when feature values are permuted.</em></p>
+</div>
 
-![adult_pfi](images/adult_pfi.png)
+<div align="center">
+  <img src="images/adult_pfi.png" alt="adult_pfi" width="100%">
+  <p><em>Permutation Feature Importance (PFI) for Adult Census Income Dataset. The x-axis represents the drop in ROC AUC score when feature values are permuted.</em></p>
+</div>
 
-![image_516b1e](images/image_516b1e.png)
 
-![image_51677d1](images/image_51677d1.png)
+<div align="center">
+  <img src="images/image_516b1e.png" alt="image_516b1e" width="100%">
+  <p><em>SHAP summary plots for Breast Cancer Dataset. Points represent individual instances; color indicates feature value (red=high, blue=low); x-axis displays the SHAP values. High values of worst texture (red) result in negative SHAP values, increasing the predicted risk of malignancy.</em></p>
+</div>
+
+
+<div align="center">
+  <img src="images/image_51677d1.png" alt="image_51677d1" width="100%">
+  <p><em>SHAP summary plots for Adult Census Income Dataset. Each point represents a single observation. For Logistic Regression, 35 extreme \texttt{Capital Gain} outliers ($I_{\texttt{Capital Gain}} \geq 30$) were excluded to improve visualization clarity.</em></p>
+</div>
 
 
 ### 3. Iterative Feature Addition
