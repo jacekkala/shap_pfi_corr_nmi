@@ -14,31 +14,25 @@ The study explores these methods in the context of Logistic Regression and XGBoo
 
 ### Interpretability Methods Analyzed
 
-* 
-**Pearson Correlation Coefficient**: Serves as the baseline for assessing linear associations between variables.
+* **Pearson Correlation Coefficient**: Serves as the baseline for assessing linear associations between variables.
 
 
-* 
-**Normalized Mutual Information (NMI)**: An information-theoretic approach designed to detect the magnitude of shared relationships between two random variables, capable of capturing non-linear and non-monotonic dependencies.
+* **Normalized Mutual Information (NMI)**: An information-theoretic approach designed to detect the magnitude of shared relationships between two random variables, capable of capturing non-linear and non-monotonic dependencies.
 
 
-* 
-**Permutation Feature Importance (PFI)**: A model-agnostic technique that evaluates importance by measuring the degradation in model performance (measured via ROC AUC) when a feature's values are randomly shuffled.
+* **Permutation Feature Importance (PFI)**: A model-agnostic technique that evaluates importance by measuring the degradation in model performance (measured via ROC AUC) when a feature's values are randomly shuffled.
 
 
-* 
-**SHAP (SHapley Additive explanations)**: A unified framework rooted in cooperative game theory that distributes a model's prediction payout among its features, satisfying desirable axiomatic properties (Efficiency, Symmetry, Dummy Player, Additivity).
+* **SHAP (SHapley Additive explanations)**: A unified framework rooted in cooperative game theory that distributes a model's prediction payout among its features, satisfying desirable axiomatic properties (Efficiency, Symmetry, Dummy Player, Additivity).
 
 
 
 ### Datasets
 
-1. 
-**Breast Cancer Wisconsin (Diagnostic) Dataset**: A strictly numerical dataset of 569 samples and 30 features derived from digitized images of cell nuclei. It is characterized by severe multicollinearity (e.g., radius, perimeter, and area are mathematically related).
+1. **Breast Cancer Wisconsin (Diagnostic) Dataset**: A strictly numerical dataset of 569 samples and 30 features derived from digitized images of cell nuclei. It is characterized by severe multicollinearity (e.g., radius, perimeter, and area are mathematically related).
 
 
-2. 
-**Adult Census Income Dataset**: Contains 32,561 records with a mix of continuous and categorical features, predicting whether an individual earns more than $50,000 annually.
+2. **Adult Census Income Dataset**: Contains 32,561 records with a mix of continuous and categorical features, predicting whether an individual earns more than $50,000 annually.
 
 
 
