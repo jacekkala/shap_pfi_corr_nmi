@@ -57,18 +57,20 @@ In the Breast Cancer Wisconsin dataset, strong near-perfect linear relationships
 
 Experimental results reveal significant inconsistencies between global rankings derived from PFI and SHAP.
 
-* 
-**Substitution Effect**: In highly correlated environments, PFI scores were found to be uniformly low because models could rely on correlated substitute features when one was permuted.
+* **Substitution Effect**: In highly correlated environments, PFI scores were found to be uniformly low because models could rely on correlated substitute features when one was permuted.
 
 
-* 
-**Model Architecture Matters**: Logistic Regression distributed its feature importance across a broader set of correlated features (showing a funnel-shaped SHAP decay), while XGBoost performed internal feature selection, assigning near-zero importance to non-informative features.
+* **Model Architecture Matters**: Logistic Regression distributed its feature importance across a broader set of correlated features (showing a funnel-shaped SHAP decay), while XGBoost performed internal feature selection, assigning near-zero importance to non-informative features.
 
 
+![image_517da1](images/image_517da1.png)
 
-(Placeholder: Add Figure 3.2 showing PFI rankings )
+![adult_pfi](images/adult_pfi.png)
 
-(Placeholder: Add Figure 3.3 showing SHAP summary plots )
+![image_516b1e.png](images/image_516b1e.png)
+
+![image_51677d1.png](images/image_51677d1.png)
+
 
 ### 3. Iterative Feature Addition
 
