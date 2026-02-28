@@ -53,8 +53,8 @@ The study explores these methods in the context of Logistic Regression and XGBoo
 
 In the Breast Cancer Wisconsin dataset, strong near-perfect linear relationships were observed, such as between mean radius and mean perimeter ($r=0.9979$).
 
-(Placeholder: Add Figure 3.1 showing pairwise relationships and distributions )
-
+https://github.com/jacekkala/shap_pfi_corr_nmi/blob/main/images/corr_plots.png?raw=true
+https://github.com/jacekkala/shap_pfi_corr_nmi/blob/main/images/corr_plots.png
 ### 2. Discrepancies Between SHAP and PFI
 
 Experimental results reveal significant inconsistencies between global rankings derived from PFI and SHAP.
