@@ -67,37 +67,35 @@ Experimental results reveal significant inconsistencies between global rankings 
 
 ![adult_pfi](images/adult_pfi.png)
 
-![image_516b1e.png](images/image_516b1e.png)
+![image_516b1e](images/image_516b1e.png)
 
-![image_51677d1.png](images/image_51677d1.png)
+![image_51677d1](images/image_51677d1.png)
 
 
 ### 3. Iterative Feature Addition
 
 Iterative selection experiments (Forward and Backward Selection) demonstrated that SHAP does not necessarily prioritize features with the highest standalone predictive power in redundant datasets. When features were added sequentially based on rankings, PFI and Correlation sometimes recovered model performance faster than SHAP in the initial stages.
 
-(Placeholder: Add Figure 3.6 showing learning curves for Forward Selection )
+![breast_best](images/breast_best.png)
+
+![adult_best](images/adult_best.png)
 
 ### 4. Mitigating Multicollinearity via Hierarchical Clustering
 
 To stabilize importance rankings and address the substitution effect, a dimensionality reduction strategy using Hierarchical Clustering (Ward's minimum variance method) was applied to the feature space.
 
-* 
-**Dimensionality Reduction**: The feature space was reduced from 30 variables to 11 representative features.
+* **Dimensionality Reduction**: The feature space was reduced from 30 variables to 11 representative features.
 
 
-* 
-**Performance Maintenance**: The reduced Logistic Regression model achieved near-identical predictive power (ROC AUC of 0.9967 vs 0.9974) compared to the full model.
+* **Performance Maintenance**: The reduced Logistic Regression model achieved near-identical predictive power (ROC AUC of 0.9967 vs 0.9974) compared to the full model.
 
 
-* 
-**Convergence of Interpretability**: The removal of redundancy unmasked the true predictive power of features, causing PFI scores to surge and bringing SHAP and PFI rankings into alignment.
+* **Convergence of Interpretability**: The removal of redundancy unmasked the true predictive power of features, causing PFI scores to surge and bringing SHAP and PFI rankings into alignment.
 
 
+![dendogram](images/dendogram.png)
 
-(Placeholder: Add Figure 3.10 showing the Ward Linkage Dendrogram )
-
-| Metric | Full Model (30 Features) | Reduced Model (11 Features, t=0.5) | 
+| Metric | Full Model (30 Features) | Reduced Model (11 Features, _t=0.5_) | 
 | : | : | : |
 | **Precision** | 0.98 | 0.98 | 
 | **Recall** | 0.95 | 0.95 | 
@@ -105,18 +103,18 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 | **Accuracy** | 0.97 | 0.97 | 
 | **ROC AUC** | 0.9974 | 0.9967 | (Table 3.4: Performance Comparison: Full Feature Set vs. Reduced Feature Set )
 
-(Placeholder: Add Figure 3.12 showing the clearer SHAP attributions after clustering )
+![pfi_after](images/pfi_after.png)
+
+![shap_after](images/shap_after.png)
 
 
 
 ## 💡 Conclusions
 
-* 
-**Linear vs. Non-linear Dependencies**: Pearson Correlation is an effective baseline for linear dependencies, but NMI is required for categorical or non-linear relationships (like those in the Adult dataset).
+* **Linear vs. Non-linear Dependencies**: Pearson Correlation is an effective baseline for linear dependencies, but NMI is required for categorical or non-linear relationships (like those in the Adult dataset).
 
 
 * **Ranking Inconsistencies**: Multicollinearity heavily obscures feature importance. PFI tends to underestimate importance due to the substitution effect, while SHAP distributes credit among correlated variables.
 
 
-* 
-**Clustering Enhances Reliability**: Grouping highly correlated features prior to model training significantly enhances the stability and clinical reliability of feature importance assessments
+* **Clustering Enhances Reliability**: Grouping highly correlated features prior to model training significantly enhances the stability and clinical reliability of feature importance assessments
