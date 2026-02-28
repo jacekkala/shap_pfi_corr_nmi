@@ -123,6 +123,7 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 * **Convergence of Interpretability**: The removal of redundancy unmasked the true predictive power of features, causing PFI scores to surge and bringing SHAP and PFI rankings into alignment.
 
 _Performance Comparison: Full Feature Set vs. Reduced Feature Set at t=0.5 (class: Malignant)_
+
 | Metric | Full Model (30 Features) | Reduced Model (11 Features, _t=0.5_) | 
 | :--- | :--- | :--- |
 | Precision | 0.98 | 0.98 | 
