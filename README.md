@@ -70,10 +70,14 @@ Experimental results reveal significant inconsistencies between global rankings 
   <p><em>Permutation Feature Importance (PFI) for Breast Cancer Dataset. The x-axis represents the drop in ROC AUC score when feature values are permuted.</em></p>
 </div>
 
+
+
 <div align="center">
   <img src="images/adult_pfi.png" alt="adult_pfi" width="100%">
   <p><em>Permutation Feature Importance (PFI) for Adult Census Income Dataset. The x-axis represents the drop in ROC AUC score when feature values are permuted.</em></p>
 </div>
+
+
 
 
 <div align="center">
@@ -82,9 +86,11 @@ Experimental results reveal significant inconsistencies between global rankings 
 </div>
 
 
+
+
 <div align="center">
   <img src="images/image_51677d1.png" alt="image_51677d1" width="100%">
-  <p><em>SHAP summary plots for Adult Census Income Dataset. Each point represents a single observation. For Logistic Regression, 35 extreme \texttt{Capital Gain} outliers ($I_{\texttt{Capital Gain}} \geq 30$) were excluded to improve visualization clarity.</em></p>
+  <p><em>SHAP summary plots for Adult Census Income Dataset. Each point represents a single observation.</em></p>
 </div>
 
 
