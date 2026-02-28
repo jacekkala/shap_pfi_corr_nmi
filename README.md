@@ -1,6 +1,6 @@
 # SHAP Values and Other Indicators of Feature Predictive Power in Binary Classification 
 
----
+
 
 ## 📌 Project Overview
 
@@ -8,7 +8,7 @@ This repository contains the implementation, analysis, and experiments from the 
 
 The study explores these methods in the context of Logistic Regression and XGBoost models, specifically highlighting how they behave under extreme multicollinearity.
 
----
+
 
 ## 🔬 Methodology
 
@@ -43,7 +43,7 @@ The study explores these methods in the context of Logistic Regression and XGBoo
 
 * **XGBoost (Extreme Gradient Boosting)**: Implemented as a complex, non-linear _"black-box"_ tree ensemble.
 
----
+
 
 ## 📊 Key Findings and Experiments
 
@@ -96,7 +96,7 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 (Placeholder: Add Figure 3.10 showing the Ward Linkage Dendrogram )
 
 | Metric | Full Model (30 Features) | Reduced Model (11 Features, t=0.5) | 
-| :--- | :--- | :--- |
+| : | : | : |
 | **Precision** | 0.98 | 0.98 | 
 | **Recall** | 0.95 | 0.95 | 
 | **F1-Score** | 0.96 | 0.96 | 
@@ -105,7 +105,7 @@ To stabilize importance rankings and address the substitution effect, a dimensio
 
 (Placeholder: Add Figure 3.12 showing the clearer SHAP attributions after clustering )
 
----
+
 
 ## 💡 Conclusions
 
