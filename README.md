@@ -160,7 +160,7 @@ To stabilize importance rankings and address the substitution effect, a dimensio
       </tr>
     </tbody>
   </table>
-  <p><em><strong> Performance Comparison: Full Feature Set vs. Reduced Feature Set at $t=0.5$ (class: Malignant)</em></p>
+  <p><em> Performance Comparison: Full Feature Set vs. Reduced Feature Set at $t=0.5$ (class: Malignant)</em></p>
 </div>
 
 <div align="center" style="margin-bottom: 150px;">
